@@ -32,6 +32,11 @@ window.addEventListener('load', function() {
 		}		
 	}
 	
+	var odstraniBarvo = function(event) {
+		document.querySelector("#barve").innerHTML = "";
+	}
+	document.querySelector("#odstraniBarve").addEventListener('click',odstraniBarvo);
+	
 	var stop = function(event) {
 		ustavi = true;
 	}
